@@ -160,6 +160,18 @@ Yang artinya mengambil line terakhir dari bukanapaapa.txt sebagai variable key d
 2. Buka website yang masih menggunakan Hypertext Transfer Protocol (HTTP) karena port source web tersebut akan berasal dari 80 contoh: monta.if.its.ac.id
 ![image](https://user-images.githubusercontent.com/49280352/134536118-6097b934-0d62-4b4c-8ba9-3eb9d606bfeb.png)
 
-
 ### 🔑 Jawaban:
  - Filter Wireshark Expression (Capture Filter): **src port 80**
+
+## 🏷️ Soal 12: Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
+
+### ✍️ Langkah-Langkah Pengerjaan:
+1. Isi wireshark capture filter dengan **port 21**
+![image](https://user-images.githubusercontent.com/49280352/134536551-521c6102-2649-4141-8d8c-509bfdd526e7.png)
+
+2. Karena port 21 itu FTP dan saya menggunakan local maka pilih interfaces yang Loopback: lo
+3. Buka FTP kemudian coba connect dengan command line **ftp 127.0.0.1**
+![image](https://user-images.githubusercontent.com/49280352/134536991-9b317026-43bd-4995-bcfb-65a8a9b86abe.png)
+
+### 🔑 Jawaban:
+ - Filter Wireshark Expression (Capture Filter): **port 21**
