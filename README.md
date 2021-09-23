@@ -199,3 +199,16 @@ Yang artinya mengambil line terakhir dari bukanapaapa.txt sebagai variable key d
 
 ### 🔑 Jawaban:
  - Filter Wireshark Expression (Capture Filter): **dst host kemenag.go.id**
+
+## 🏷️ Soal 15: Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
+
+### ✍️ Langkah-Langkah Pengerjaan:
+1. Cek ip menggunakan **ifconfig** didapatkan ip device saya yaitu 192.168.18.128
+2. Isi wireshark capture filter dengan **src 192.168.18.128**
+![image](https://user-images.githubusercontent.com/49280352/134538706-356fa119-6de1-49bc-ad0a-47557c5d729e.png)
+
+3. Jika Tidak keluar paketnya maka lakukan akses internet menggunakan browser apapun kemudian akan terlihat paket-paketnya
+![image](https://user-images.githubusercontent.com/49280352/134538872-ee4fff68-e772-4334-b194-ef0487219814.png)
+
+### 🔑 Jawaban:
+ - Filter Wireshark Expression (Capture Filter): **src 192.168.18.128**
