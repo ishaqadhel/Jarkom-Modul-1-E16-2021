@@ -77,3 +77,20 @@
  - Filter Wireshark Expression: **ftp.request.command eq "USER"** & **ftp.request.command eq "PASS"**
  - Username: **secretuser**
  - Password: **aku.pengen.pw.aja**
+
+## 🏷️ Soal 7: Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..., 499.zip. Simpan dan Buka file pdf tersebut. (Hint = nama pdf-nya "Real.pdf")
+
+### ✍️ Langkah-Langkah Pengerjaan:
+1. Isi wireshark display filter dengan **frame contains "Real.pdf"**
+![soal-7-1](https://user-images.githubusercontent.com/49280352/134530145-f7bb867a-44e3-4f10-af79-0b7d53ab72ae.png)
+
+2. Follow TCP Stream
+3. Ganti Show data as RAW
+4. Save as file.zip
+![soal-7-2](https://user-images.githubusercontent.com/49280352/134530186-add30a57-3a69-4b6d-8e17-19b8dff2ed5d.png)
+
+5. Extract dan lihat filenya
+![soal-7-3](https://user-images.githubusercontent.com/49280352/134530202-f23448cb-b30e-495a-af08-97cc1503c9f1.png)
+
+### 🔑 Jawaban:
+ - Filter Wireshark Expression: **frame contains "Real.pdf"**
