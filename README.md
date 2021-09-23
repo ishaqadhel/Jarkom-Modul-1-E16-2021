@@ -187,3 +187,15 @@ Yang artinya mengambil line terakhir dari bukanapaapa.txt sebagai variable key d
 
 ### 🔑 Jawaban:
  - Filter Wireshark Expression (Capture Filter): **dst port 443**
+
+## 🏷️ Soal 14: Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!
+
+### ✍️ Langkah-Langkah Pengerjaan:
+1. Isi wireshark capture filter dengan **dst host kemenag.go.id**
+![image](https://user-images.githubusercontent.com/49280352/134537975-49086cad-c258-4281-81d0-8b25954daa65.png)
+
+2. Buka website kemenag.go.id untuk melihat paket yang didapat
+![image](https://user-images.githubusercontent.com/49280352/134538013-72221dfe-5538-49fc-98e1-b758ffb7f99e.png)
+
+### 🔑 Jawaban:
+ - Filter Wireshark Expression (Capture Filter): **dst host kemenag.go.id**
