@@ -3,7 +3,7 @@
 **Anggota Kelompok:**
  - Ishaq Adheltyo (05111940000167)
 
-## 📍 Soal 1: Sebutkan webserver yang digunakan pada "ichimarumaru.tech"!
+## 🏷️ Soal 1: Sebutkan webserver yang digunakan pada "ichimarumaru.tech"!
 
 ### ✍️ Langkah-Langkah Pengerjaan:
 1. Isi wireshark display filter dengan **http.host eq "ichimarumaru.tech"**
@@ -16,3 +16,12 @@
 ### 🔑 Jawaban:
  - Filter Wireshark Expression: **http.host eq "ichimarumaru.tech"**
  - Server: **nginx/1.18.0 (Ubuntu)**
+
+## 🏷️ Soal 2: Temukan paket dari web-web yang menggunakan basic authentication method!
+
+### ✍️ Langkah-Langkah Pengerjaan:
+1. Isi wireshark display filter dengan **http.authorization contains Basic**
+![soal-2](https://user-images.githubusercontent.com/49280352/134523975-6896a5bc-6373-4e1a-b2b0-9a92b8e913e4.png)
+
+### 🔑 Jawaban:
+ - Filter Wireshark Expression: **http.authorization contains Basic**
