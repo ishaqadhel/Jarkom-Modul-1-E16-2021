@@ -150,3 +150,16 @@ Yang artinya mengambil line terakhir dari bukanapaapa.txt sebagai variable key d
 
 ### 🔑 Jawaban:
  - Filter Wireshark Expression: **ftp-data**
+
+## 🏷️ Soal 11: Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
+
+### ✍️ Langkah-Langkah Pengerjaan:
+1. Isi wireshark capture filter dengan **src port 80**
+![image](https://user-images.githubusercontent.com/49280352/134536050-ccb381cd-1ae8-44c5-9a01-4494bc771d70.png)
+
+2. Buka website yang masih menggunakan Hypertext Transfer Protocol (HTTP) karena port source web tersebut akan berasal dari 80 contoh: monta.if.its.ac.id
+![image](https://user-images.githubusercontent.com/49280352/134536118-6097b934-0d62-4b4c-8ba9-3eb9d606bfeb.png)
+
+
+### 🔑 Jawaban:
+ - Filter Wireshark Expression (Capture Filter): **src port 80**
