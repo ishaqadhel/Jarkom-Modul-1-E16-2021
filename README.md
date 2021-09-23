@@ -37,7 +37,7 @@
 
 ### 🔑 Jawaban:
  - Filter Wireshark Expression: **http.authorization contains Basic**
- - Screenshot Perintah pada web:
+ - Screenshot Perintah pada Website:
    ![soal-3-2](https://user-images.githubusercontent.com/49280352/134525812-98e50824-0447-4e56-818f-8d1052d1c007.png)
 
 
@@ -49,3 +49,17 @@
 
 ### 🔑 Jawaban:
  - Filter Wireshark Expression: **mysql.query contains "select"**
+
+## 🏷️ Soal 5: Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!
+
+### ✍️ Langkah-Langkah Pengerjaan:
+1. Isi wireshark display filter dengan **mysql.query contains "INSERT"**
+2. Dapatkan username dan password pada **MYSQL Protocol > Request Command Query > Statement **
+![soal-5-1](https://user-images.githubusercontent.com/49280352/134527632-be1549c5-3935-436a-9282-4f2706a0f1d7.png)
+
+3. Login ke portal.ichimarumaru.tech dan ikuti perintahnya
+
+### 🔑 Jawaban:
+ - Filter Wireshark Expression: **mysql.query contains "INSERT"**
+ - Screenshot Perintah pada Website:
+   ![soal-5-2](https://user-images.githubusercontent.com/49280352/134527654-67a46ea8-69e2-48cd-84e6-ddb658c0cf48.png)
