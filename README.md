@@ -25,3 +25,17 @@
 
 ### 🔑 Jawaban:
  - Filter Wireshark Expression: **http.authorization contains Basic**
+
+## 🏷️ Soal 3: Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan dari file .pcapng!
+
+### ✍️ Langkah-Langkah Pengerjaan:
+1. Isi wireshark display filter dengan **http.host eq “basic.ichimarumaru.tech”**
+2. Lihat pada Hypertext **Transfer Protocol > Authorization > Credentials** untuk menemukan username dan password
+![soal-3-1](https://user-images.githubusercontent.com/49280352/134525778-c607d646-91a8-4d81-adfd-458ec2f58fe0.png)
+
+3. Buka Website basic.ichimarumaru.text kemudian login dengan username dan password yang telah didapatkan
+
+### 🔑 Jawaban:
+ - Filter Wireshark Expression: **http.authorization contains Basic**
+ - Screenshot Perintah pada web:
+   ![soal-3-2](https://user-images.githubusercontent.com/49280352/134525812-98e50824-0447-4e56-818f-8d1052d1c007.png)
