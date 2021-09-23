@@ -110,7 +110,7 @@
 1. Isi wireshark display filter dengan **ftp-data**
 ![image](https://user-images.githubusercontent.com/49280352/134531585-a1ca18da-1b9f-4794-858c-b1e602fbeccb.png)
 
-2. Follow TCP Stream
+2. Pilih yang mengandung secret.zip di info dan Follow TCP Stream
 3. Show data as RAW
 4. Save as secret.zip
 5. Buka File secret.zip yang telah di download tadi
@@ -119,3 +119,34 @@
 ### 🔑 Jawaban:
  - Filter Wireshark Expression: **ftp-data**
  - Isi File: **Wanted.pdf dan dilock sebuah password**
+
+## 🏷️ Soal 10: Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan password untuk membuka file rahasia yang ada di "secret.zip"!
+
+### ✍️ Langkah-Langkah Pengerjaan:
+1. Isi wireshark display filter dengan **ftp-data**
+![image](https://user-images.githubusercontent.com/49280352/134532893-b83c4c32-62a5-4867-80cc-9c8da214a864.png)
+
+2. Pilih yang mengandung history.txt di info dan Follow TCP Stream
+3. Show data as RAW
+![image](https://user-images.githubusercontent.com/49280352/134532958-f95f9ec1-9609-4b91-b27d-c690aadbaf6c.png)
+
+4. Dapat dilihat bahwa file history.txt merupakan sebuah command bash dan memiliki line
+
+``` key="$(tail -1 bukanapaapa.txt)" ```
+
+``` zip -P $key secret.zip Wanted.pdf ```
+
+Yang artinya mengambil line terakhir dari bukanapaapa.txt sebagai variable key dan memasukan key untuk membuka secret.zip, berarti secret.zip memiliki password yang berada pada file bukanapaapa.txt di line terakhirnya
+
+5. Isi wireshark display filter dengan **ftp-data**
+![image](https://user-images.githubusercontent.com/49280352/134534988-ef411edd-2f43-42ca-879f-bf1239857c17.png)
+
+6. Pilih yang mengandung bukanapaapa.txt
+7. Show data as RAW
+![image](https://user-images.githubusercontent.com/49280352/134535047-abec13bc-3331-4f26-aed0-0d2b8b9d3126.png)
+
+8. Masukkan password untuk extract file dengan **d1b1langbukanapaapajugagapercaya**
+![image](https://user-images.githubusercontent.com/49280352/134535108-0fb69926-cc3a-4c76-a6fb-fbef9891f001.png)
+
+### 🔑 Jawaban:
+ - Filter Wireshark Expression: **ftp-data**
