@@ -63,3 +63,17 @@
  - Filter Wireshark Expression: **mysql.query contains "INSERT"**
  - Screenshot Perintah pada Website:
    ![soal-5-2](https://user-images.githubusercontent.com/49280352/134527654-67a46ea8-69e2-48cd-84e6-ddb658c0cf48.png)
+
+## 🏷️ Soal 6: Cari username dan password ketika melakukan login ke FTP Server!
+
+### ✍️ Langkah-Langkah Pengerjaan:
+1. Isi wireshark display filter dengan **ftp.request.command eq "USER"**
+![soal-6-1](https://user-images.githubusercontent.com/49280352/134529414-2854139d-82cd-4023-a664-61b11c17a6ba.png)
+
+2. Isi wireshark display filter dengan **ftp.request.command eq "PASS"**
+![soal-6-2](https://user-images.githubusercontent.com/49280352/134529442-16dfa2cf-c1cc-436e-97c9-77eb6d2f021b.png)
+
+### 🔑 Jawaban:
+ - Filter Wireshark Expression: **ftp.request.command eq "USER"** & **ftp.request.command eq "PASS"**
+ - Username: **secretuser**
+ - Password: **aku.pengen.pw.aja**
