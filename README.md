@@ -39,3 +39,13 @@
  - Filter Wireshark Expression: **http.authorization contains Basic**
  - Screenshot Perintah pada web:
    ![soal-3-2](https://user-images.githubusercontent.com/49280352/134525812-98e50824-0447-4e56-818f-8d1052d1c007.png)
+
+
+## 🏷️ Soal 4: Temukan paket mysql yang mengandung perintah query select!
+
+### ✍️ Langkah-Langkah Pengerjaan:
+1. Isi wireshark display filter dengan **mysql.query contains "select"**
+![soal-4-1](https://user-images.githubusercontent.com/49280352/134526511-83b163ca-d5b9-44a6-9e87-6b3928d3edb5.png)
+
+### 🔑 Jawaban:
+ - Filter Wireshark Expression: **mysql.query contains "select"**
