@@ -175,3 +175,15 @@ Yang artinya mengambil line terakhir dari bukanapaapa.txt sebagai variable key d
 
 ### 🔑 Jawaban:
  - Filter Wireshark Expression (Capture Filter): **port 21**
+
+## 🏷️ Soal 13: Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
+
+### ✍️ Langkah-Langkah Pengerjaan:
+1. Isi wireshark capture filter dengan **dst port 443**
+![image](https://user-images.githubusercontent.com/49280352/134537517-ac1ee387-783c-43d4-80e7-132af08ae8fa.png)
+
+2. Buka website dengan https karena port 443 (SSL) didapatkan dari source web yang menggunakan https contohnya my.its.ac.id
+![image](https://user-images.githubusercontent.com/49280352/134537561-a9a06ccf-396e-4c41-b966-97588b32739a.png)
+
+### 🔑 Jawaban:
+ - Filter Wireshark Expression (Capture Filter): **dst port 443**
