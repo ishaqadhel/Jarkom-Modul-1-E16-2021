@@ -94,3 +94,12 @@
 
 ### 🔑 Jawaban:
  - Filter Wireshark Expression: **frame contains "Real.pdf"**
+
+## 🏷️ Soal 8: Cari paket yang menunjukan pengambilan file dari FTP tersebut!
+
+### ✍️ Langkah-Langkah Pengerjaan:
+1. Isi wireshark display filter dengan **ftp.request.command eq "RETR"**
+![image](https://user-images.githubusercontent.com/49280352/134530929-9b072648-d814-4632-8b3d-c748f4b94e84.png)
+
+### 🔑 Jawaban:
+ - Filter Wireshark Expression: **ftp.request.command eq "RETR"**
