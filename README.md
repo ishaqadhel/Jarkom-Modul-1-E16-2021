@@ -103,3 +103,19 @@
 
 ### 🔑 Jawaban:
  - Filter Wireshark Expression: **ftp.request.command eq "RETR"**
+
+## 🏷️ Soal 9: Dari paket-paket yang menuju FTP terdapat indikasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut!
+
+### ✍️ Langkah-Langkah Pengerjaan:
+1. Isi wireshark display filter dengan **ftp-data**
+![image](https://user-images.githubusercontent.com/49280352/134531585-a1ca18da-1b9f-4794-858c-b1e602fbeccb.png)
+
+2. Follow TCP Stream
+3. Show data as RAW
+4. Save as secret.zip
+5. Buka File secret.zip yang telah di download tadi
+![image](https://user-images.githubusercontent.com/49280352/134531865-1e9b11ea-540d-4684-8266-2657f62337a0.png)
+
+### 🔑 Jawaban:
+ - Filter Wireshark Expression: **ftp-data**
+ - Isi File: **Wanted.pdf dan dilock sebuah password**
