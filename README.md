@@ -212,3 +212,6 @@ Yang artinya mengambil line terakhir dari bukanapaapa.txt sebagai variable key d
 
 ### 🔑 Jawaban:
  - Filter Wireshark Expression (Capture Filter): **src 192.168.18.128**
+
+## 🧗 Kendala
+![solo-2](https://user-images.githubusercontent.com/49280352/134629018-ac6961ba-3488-4ca1-b4da-34338ab2e4d9.png)
