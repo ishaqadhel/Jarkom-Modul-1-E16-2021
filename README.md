@@ -54,7 +54,7 @@
 
 ### ✍️ Langkah-Langkah Pengerjaan:
 1. Isi wireshark display filter dengan **mysql.query contains "INSERT"**
-2. Dapatkan username dan password pada **MYSQL Protocol > Request Command Query > Statement **
+2. Dapatkan username dan password pada **MYSQL Protocol > Request Command Query > Statement**
 ![soal-5-1](https://user-images.githubusercontent.com/49280352/134527632-be1549c5-3935-436a-9282-4f2706a0f1d7.png)
 
 3. Login ke portal.ichimarumaru.tech dan ikuti perintahnya
